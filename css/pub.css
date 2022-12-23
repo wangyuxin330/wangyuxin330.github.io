@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5,h6,ul,p,body,form,dl,dd,dt{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:rgb(179,178,183);
+}
+/* a:visited{
+    color: #000;
+} */
+img{
+    border: none;
+    display: block;
+    width: 100%;
+}
+body{
+    min-width:320px;
+    /*min-width:1040px;/* 建议不设置 */
+    margin:0 auto;/* 加max-width时增加该属性 */
+    overflow-x: hidden;/* 对x轴设置 */
+    
+}
+html{
+    font-size:5.6vw;
+    /* rem,另外可以用media query实现 */
+}
