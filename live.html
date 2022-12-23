@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001010330-王钰鑫</title>
+    <script src="./font/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <style>
+        body{
+            padding: .3rem .5rem;
+        }
+        p{
+            font-size: .6rem;
+        }
+        span{
+            font-size: .5rem;
+        }
+        #header{
+            display: flex;
+            padding: 8px 0;
+            background-color: #fff;
+            width: 100%;
+        }
+        #header h3{
+            font-size: 24px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        #header img{
+            width: 32px;
+            padding: 0 12px;
+        }
+        .perfo{
+            display: flex;
+            overflow: hidden;
+        }
+        .topic{
+            border-radius: .4rem;
+            padding: .5rem;
+            margin-right: .5rem;
+            background-color: rgb(254,238,239);
+        }
+        .topic li{
+            background: url(./img/dot.gif) no-repeat 0 .5rem;
+            background-size: .4rem;
+            padding-top: .4rem;
+            padding-left: .6rem;
+        }
+        .question{
+            display: flex;
+            overflow: hidden;
+            margin-bottom: .3rem;
+        }
+        .question div{
+            padding: .3rem;
+        }
+        .question .left{
+            background-color: rgb(233,255,253);
+            border-radius: .4rem;
+        }
+        .left p{
+            color: rgb(147,146,255);
+        }
+        .question .right{
+            background-color: rgb(250,237,255);
+            border-radius: .4rem;
+        }
+        .right p{
+            color: rgb(247,166,184);
+        }
+        .question img{
+            width: 2rem;
+            border-radius: .3rem;
+        }
+        .team{
+            background-color: rgb(244,150,174);
+            border-radius: .4rem;
+            color: #fff;
+            line-height: .7rem;
+            padding: .3rem;
+        }
+        .circle{
+            padding: .5rem;
+            margin-top: .3rem;
+            background-color: rgb(255,248,255);
+            border-radius: .3rem;
+        }
+        .circle ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .circle li{
+            width: 40%;
+            background: url(./img/dot.gif) no-repeat 0 .5rem;
+            background-size: 1.3rem;
+            padding-top: .5rem;
+            padding-left: 1.5rem;
+        }
+        /* 导航 */
+        .tt{
+            display: flex;
+            padding-left: 10px;
+            z-index: 9;
+            width: 100%;
+            background-color: #fff;
+        }
+        .tt span{
+            padding: 0 5px;
+            padding-bottom: 0;
+            line-height: 33px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #fff;
+            color: rgb(179,178,183);
+            letter-spacing: 3px;
+        }
+        .tt .cur{
+            border-bottom: 3px solid rgb(255,162,217);
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        .tc{
+            padding: 0 5%;
+        }
+        .tc ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tc li{
+            width: 47%;
+            margin: .2rem;
+        }
+        .tc img{
+            width: 100%;
+            border-radius: .2rem 
+        }
+        /* 下导航 */
+        #bnav{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(251,251,251);/* 一定要设 */
+            z-index: 9;
+        }
+        #bnav ul{
+            display: flex;/* 横 */           
+        }
+        #bnav li,.option li{
+            width: 20%;
+            text-align: center;
+        }
+        #bnav svg{
+            font-size: 30px;
+            margin: 5px auto;
+        }
+        #bnav p{
+            font-size: 10px;
+            line-height: 22px;
+        }
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        #bnav a:hover{
+            color:rgb(254,42,116);
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h3>记录我的现场</h3>
+        <img src="./img/profile.jpg">
+    </header>
+    <div class="perfo">
+        <div class="topic">
+            <p>演出动态</p>
+            <ul>
+                <li>
+                    <p>帮你种草心动演出</p>
+                    <p><span>Pick感兴趣的好演出</span></p>
+                </li>
+                <li>
+                    <p>国产音乐剧入门指南</p>
+                    <p><span>隐秘的角落，人间失格这几部剧值得pick</span></p>
+                </li>
+                <li>
+                    <p>攻略|不看后悔的神仙舞剧</p>
+                    <p><span>除了只此青绿、这几部绝美舞剧值得打卡</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="other">
+            <div class="question">
+                <div class="left">
+                    <p>星映话</p>
+                    <span>郑云龙</span>
+                    <img src="./img/question1.jpg">
+                </div>
+                <div class="right">
+                    <p>X问</p>
+                    <span>爽子</span>
+                    <img src="./img/question2.jpg">
+                </div>
+            </div>
+            <div class="team">
+                <p>观演团</p>
+                <p>免费看演出</p>
+                <p>1个活动招募中</p>
+            </div>
+        </div>
+    </div>
+    <div class="circle">
+        <p>热门圈子</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul>
+                    <li>
+                        <p>城市娱乐家</p>
+                        <p><span>1210娱乐家</span></p>
+                    </li>
+                    <li>
+                        <p>德云社最值得</p>
+                        <p><span>12643相声迷</span></p>
+                    </li>
+                    <li>
+                        <p>体育圈</p>
+                        <p><span>3003...</span></p>
+                    </li>
+                    <li>
+                        <p>我们是戏剧迷</p>
+                        <p><span>752剧迷</span></p>
+                    </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul>
+                    <li>
+                        <p>又解锁一个好展</p>
+                        <p><span>741圈友</span></p>
+                    </li>
+                    <li>
+                        <p>运动圈</p>
+                        <p><span>12643健身达人</span></p>
+                    </li>
+                    <li>
+                        <p>洋葱圈</p>
+                        <p><span>3003...</span></p>
+                    </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </div>
+    <div class="tab">
+        <div class="tt">
+            <span class="cur">推荐</span>
+            <span>想看&想玩</span>
+            <span>关注</span>
+        </div>
+        <div class="tc" style="display: block">
+            <ul class="live"></ul>
+        </div>
+        <div class="tc">
+            <ul class="drama">
+                <li>
+                    <img src="./img/drama4.jpg" >
+                    <p>《三里屯脱口秀》【大笑喜剧】...</p>
+                    <p><span class="price">¥60</span>起</p>
+                </li>
+                <li>
+                    <img src="./img/drama5.jpg">
+                    <p>【笑脱喜剧】国贸万达精品|爆笑...</p>
+                    <p><span class="price">¥60</span>起</p>
+                </li>
+            </ul>
+        </div>
+        <div class="tc">
+            <ul class="drama">
+                <li>
+                    <img src="./img/station1.jpg" >
+                    <p>音乐剧《基督山伯爵》中文版</p>
+                    <p><span class="price">¥80</span>起</p>
+                    
+                </li>
+                <li>
+                    <img src="./img/drama12.jpg">
+                    <p>开心麻花钢琴LIVE音乐剧《致命旋...</p>
+                    <p><span class="price">¥180</span>起</p>
+                </li>
+            </ul>    
+        </div>    
+    </div>
+    <nav id="bnav">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouyefill"></use>
+                        </svg>
+                    </span>
+                    <p>精选</p>
+                </a>
+            </li>
+            <li>
+                <a href="./live.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yanjing"></use>
+                        </svg>
+                    </span>
+                    <p>现场</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-huiyuan3"></use>
+                        </svg>
+                    </span>
+                    <p>会员</p>
+                </a>
+            </li>
+            <li>
+                <a href="./ticket.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-dianyingpiao"></use>
+                        </svg>
+                    </span>
+                    <p>票夹</p>
+                </a>
+            </li>
+            <li>
+                <a href="./my.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-drip-full"></use>
+                        </svg>
+                    </span>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/tab.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
+        });
+        var command = [{
+                img: "./img/month7.jpg",
+                title: "会友曲艺社相声专场",
+                author: "小麻花",
+            }, {
+                img: "./img/month8.jpg",
+                title: "[寻找沈岚]送春归2022冬...",
+                author: "小洋人",
+            }, {
+                img: "./img/month9.jpg",
+                title: "《贩灵迷境》沉浸式喜剧",
+                author: "爱看喜剧的乌龟",
+            },{
+                img: "./img/month11.jpg",
+                title: "开心麻花爆笑舞台剧《乌龙山...",
+                author: "mono",
+            },{
+                img: "./img/drama13.jpg",
+                title: "孟京辉戏剧作品《红与黑》",
+                author: "小六",
+            },{
+                img: "./img/month1.jpg",
+                title: "《天空之城》久石让&宫崎骏...",
+                author: "卡布",
+            }]
+            var live = document.querySelector(".live");
+            command.forEach((v, i) => {
+                var text = document.createElement("li");
+                text.innerHTML = `
+                <img src="${v.img}">
+                <p>${v["title"]}</p>
+                <p>${v.author}</p>
+                `;
+                live.appendChild(text);
+            })
+    </script>
+</body>
+</html>

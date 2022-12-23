@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001010330-王钰鑫</title>
+    <script src="./font/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        body{
+            background-color: #efeefe;
+        }
+        .set{
+            flex-grow: 1;
+            text-align: right;
+        }
+        .set svg{
+            padding: .2rem;
+        }
+        .follow,.vip,.service{
+            padding: .5rem;
+            background-color: #fff;
+            border-radius: .3rem;
+            margin: .4rem;
+        }
+        .follow img{
+            padding: .3rem;
+            width: 20%;
+            border-radius: 2rem;
+        }
+        .follow p,.vip p{
+            line-height: 1.2rem;
+            font-size: .6rem;
+            color: #aaa;
+        }
+        .follow span{
+            font-size: .8rem;
+            color: #000;
+        }
+        .follow ul{
+            display: flex;
+        }
+        .follow li{
+            width: 30%;
+        }
+        .vip span{
+            font-size: .8rem;
+            font-weight: bold;
+            color: #fe8570;
+        }
+        .vip .icon{
+            float: right;
+        }
+        .service{
+            background-color: #fff;
+        }
+        .service li{
+            width: 20%;
+            margin: .3rem 0;
+            text-align: center;
+        }
+        .service p{
+            font-size: .6rem;
+            line-height: .7rem;
+        }
+        .service a{
+            color: #000;
+            margin: 0 auto;
+        }
+        button{
+            background-color: #fff;
+            border: #fff;
+            margin: 0 auto;
+        }
+        /* 下导航 */
+        #bnav{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(251,251,251);/* 一定要设 */
+            z-index: 9;
+        }
+        #bnav ul,.service ul{
+            display: flex;/* 横 */           
+        }
+        #bnav li,.option li{
+            width: 20%;
+            text-align: center;
+        }
+        #bnav svg,.service svg{
+            font-size: 30px;
+            margin: 5px auto;
+        }
+        #bnav p{
+            font-size: 10px;
+            line-height: 22px;
+        }
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        #bnav a:hover{
+            color:rgb(254,42,116);
+        }
+    </style>
+</head>
+<body>
+    <div class="set">
+        <a href="./install.html">
+            <span>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shezhi"></use>
+                </svg>
+            </span>
+        </a>
+        <a href="./message.html">
+            <span>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon--chat"></use>
+                </svg>
+            </span>
+        </a>
+    </div>
+    <div class="follow">
+        <img src="./img/profile.jpg">
+        <h3>HI~欢迎来到大麦</h3>
+        <p>快去登录吧<svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jiantouyou"></use>
+        </svg></p>
+        <ul>
+            <li><p><span>0</span>关注</p></li>
+            <li><p><span>0</span>粉丝</p></li>
+            <li><p><span>0</span>获赞与想看</p></li>
+        </ul>
+    </div>
+    <div class="vip">
+        <p><span>淘麦VIP|会员中心</span>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jiantouyou"></use>
+            </svg>
+            </p>
+        <p>成为会员</p>
+    </div>
+    <div class="service">
+        <p>我的服务</p>
+        <ul>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-orderc"></use>
+                </svg>
+                <p>我的订单</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ren"></use>
+                </svg>
+                <p>观演人</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dizhi1"></use>
+                </svg>
+                <p>收货地址</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-pingjia"></use>
+                </svg>
+                <p>评价</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-youhuiquan1"></use>
+                </svg>
+                <p>优惠券</p>
+            </li>    
+        </ul>
+        <div id="appear">
+            <ul>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-kefu1"></use>
+                    </svg>
+                    <p>在线客服</p>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-peisongrenyuan"></use>
+                    </svg>
+                    <p>观演团</p>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qianbao"></use>
+                    </svg>
+                    <p>电子钱包</p>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-fankui"></use>
+                    </svg>
+                    <p>用户反馈</p>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-aixinjuanzeng"></use>
+                    </svg>
+                    <p>公益三小时</p>
+                </li>
+            </ul>
+        </div>
+        <button id="collapse" onclick="sq()" style="display:block">收起
+            <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jiantou_liebiaoshouqi_o"></use>
+        </svg></button>
+        <button id="expand" onclick="zk()" style="display:none">展开
+            <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jiantou_liebiaozhankai_o"></use>
+        </svg></button>
+    </div>
+    <nav id="bnav">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouyefill"></use>
+                        </svg>
+                    </span>
+                    <p>精选</p>
+                </a>
+            </li>
+            <li>
+                <a href="./live.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yanjing"></use>
+                        </svg>
+                    </span>
+                    <p>现场</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-huiyuan3"></use>
+                        </svg>
+                    </span>
+                    <p>会员</p>
+                </a>
+            </li>
+            <li>
+                <a href="./ticket.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-dianyingpiao"></use>
+                        </svg>
+                    </span>
+                    <p>票夹</p>
+                </a>
+            </li>
+            <li>
+                <a href="./my.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-drip-full"></use>
+                        </svg>
+                    </span>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        var appear=document.getElementById("appear");
+        var collapse=document.getElementById("collapse");
+        var expand=document.getElementById("expand");
+        function sq(){
+            appear.style.display="none";
+            collapse.style.display="none";
+            expand.style.display="block";
+        }
+        function zk(){
+            appear.style.display="block";
+            expand.style.display="none";
+            collapse.style.display="block";
+        }
+    </script>
+</body>
+</html>

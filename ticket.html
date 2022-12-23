@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001010330-王钰鑫</title>
+    <script src="./font/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <style>
+        body{
+            background-color: #f8f9fb;
+        }
+        #header{
+            background-color: #fff;
+        }
+        #header h3{
+            font-size: 24px;
+            text-align: center;            
+        }
+        .swiper-slide{
+            background-color: #fff;
+            border-radius: .3rem;
+            padding: 5rem 0 1rem;
+        }
+        .swiper-slide p{
+            text-align: center;
+            font-size: .6rem;
+            line-height: 1.5rem;
+            color: #999999;
+        }
+        .swiper-slide span{
+            font-size: .8rem;
+            color: #000;
+        }
+        .log{
+            background-color: #fff;
+        }
+        .log p{
+            font-size: .8rem;
+            text-align: center;
+            color: #fff;
+            background-color: #fe2a74;
+            padding: 8px;
+            margin: 0 6rem;
+            border-radius: 3rem;
+        }
+        /* 下导航 */
+        #bnav{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(251,251,251);/* 一定要设 */
+            z-index: 9;
+        }
+        #bnav ul{
+            display: flex;/* 横 */           
+        }
+        #bnav li,.option li{
+            width: 20%;
+            text-align: center;
+        }
+        #bnav svg{
+            font-size: 30px;
+            margin: 5px auto;
+        }
+        #bnav p{
+            font-size: 10px;
+            line-height: 22px;
+        }
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        #bnav a:hover{
+            color: #fe2a74;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h3>票夹</h3>
+    </header>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p><span>演出实时动态</span></p>
+                <p>取票、检票、开演信息及时掌握啦(๑´∀`๑)</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>演出实时动态</span></p>
+                <p>场馆地图、交通停车和周边服务全知道(>▽<)< /p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="log">
+        <p>登录</p>
+    </div>
+    <nav id="bnav">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouyefill"></use>
+                        </svg>
+                    </span>
+                    <p>精选</p>
+                </a>
+            </li>
+            <li>
+                <a href="./live.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yanjing"></use>
+                        </svg>
+                    </span>
+                    <p>现场</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-huiyuan3"></use>
+                        </svg>
+                    </span>
+                    <p>会员</p>
+                </a>
+            </li>
+            <li>
+                <a href="./ticket.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-dianyingpiao"></use>
+                        </svg>
+                    </span>
+                    <p>票夹</p>
+                </a>
+            </li>
+            <li>
+                <a href="./my.html">
+                    <span>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-drip-full"></use>
+                        </svg>
+                    </span>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+        }
+        });
+    </script>
+</body>
+</html>

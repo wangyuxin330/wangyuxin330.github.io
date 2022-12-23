@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001010330-王钰鑫</title>
+    <script src="./font/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        #header{
+            display: flex;
+        }
+        #header h3{
+            flex-grow: 1;
+            text-align: center;
+            font-size: 24px;
+        }
+        #header a{
+            color: #000;
+        }
+        .set{
+            background-color: #eee;
+        }
+        .set li{
+            display: flex;
+            line-height: 50px;
+            margin-bottom: 2px;
+            background-color: #fff;
+        }
+        .set a{
+            flex-grow: 1;
+            font-size: 14px;
+            padding: 0 8px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #000;
+        }
+        .set span:last-child{
+            margin: 0 8px;
+            font-size: 20px;
+        }
+        .set li:first-child,.set li:nth-child(4){
+            margin: 10px 0;
+        }
+        .set li:nth-child(11){
+            margin-bottom: 10px;
+        }
+        .set span{
+            color: #ccc;
+
+        }
+
+        /* 下导航 */
+        #bnav{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(251,251,251);/* 一定要设 */
+            z-index: 9;
+        }
+        #bnav p{
+            text-align: center;
+            font-size: 24px;
+            line-height: 50px;
+            color: #fff;
+            background-color: #fe2a74;
+            margin: 8px;
+            border-radius: 30px;
+        }
+        .icon{
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="./my.html"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-fanhui"></use>
+        </svg></a>
+        <h3>设置</h3>
+    </header>
+    <ul class="set">
+        <li>
+            <a href="#">账号安全</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">清空缓存</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">检查更新</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">消息推送</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">隐私设置</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">隐私政策摘要</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">帮助中心</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">协议规则</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">系统权限</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">个人信息共享清单</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">个人信息收集清单</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">关于大麦</a>
+            <span class="iconfont icon-jiantouyou"></span>
+        </li>
+        <li>
+            <a href="#">客服电话</a>
+            <span>1010-3721</span>
+        </li>
+        <li>
+            <a href="#">意见反馈</a>
+        </li>
+    </ul>
+
+
+    <nav id="bnav">
+        <a href="#">
+            <p>退出登录</p>
+        </a>
+    </nav>
+</body>
+</html>

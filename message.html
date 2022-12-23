@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001010330-王钰鑫</title>
+    <script src="./font/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        #header{
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            line-height: 1.5rem;
+        }
+        #header h3{
+            flex-grow: 1;
+            text-align: center;
+            font-size: 24px;
+        }
+        #header a{
+            color: #000;
+            font-size: 2rem;
+        }
+        .message li{
+            padding: 1rem 0;
+        }
+        .message svg{
+            float: left;
+            font-size: 2.5rem;
+            padding: 0 .5rem;
+        }
+        .message p{
+            font-size: .7rem;
+            line-height: 1.5rem;
+            color: #999999;
+        }
+        .message h4{
+            padding-top: .3rem;
+            font-size: .8rem;
+        }
+        .icon{
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="./my.html">
+            <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-fanhui"></use>
+            </svg>
+        </a>
+        <h3>消息</h3>
+    </header>
+    <main>
+        <ul class="message">
+            <!-- <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dianzan"></use>
+            </svg>
+            <h4>为你推荐</h4>
+            <p>全国脱口秀想看热榜超87000人参与...</p> -->
+        </ul>
+    </main>
+
+    <script>
+        var messagetext=[{
+        img:"#icon-dianzan",
+        title:"为你推荐",
+        text:"全国脱口秀想看热榜超87000人参与..."
+    },{
+        img:"#icon-tongzhi",
+        title:"一些通知",
+        text:"暂时没有新通知(⊙o⊙)"
+    },{
+        img:"#icon-guanzhu",
+        title:"关注与回复",
+        text:"暂时没有新通知(⊙o⊙)"
+    },{
+        img:"#icon-zhinengdianzi",
+        title:"观演智能助理",
+        text:"还有哪些疑惑？让小蜜来您解答吧！"
+    }]
+    var message=document.querySelector(".message");
+    messagetext.forEach((v,i)=>{
+        var text=document.createElement("li");
+        text.innerHTML=`
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="${v.img}"></use>
+        </svg>
+        <h4>${v.title}</h4>
+        <p>${v.text}</p>
+        `;
+        message.appendChild(text);
+    })
+    </script>
+</body>
+</html>
